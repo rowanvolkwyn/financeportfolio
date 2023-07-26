@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <link href="style.css" rel="stylesheet">
+        <h1>Finances</h1>
+        <!--Create a navigation bar-->
+        <ul>
+            <li>Add Transaction</li>
+            <li>Transactions</li>
+        </ul>
+    </head>
+    <body>
+        <h2>API Request</h2>
+        <form id="apiForm">
+            <label form="callType">Select Call Type:</label>
+            <select id="callType" name="callType">
+                <option value="GET">GET</option>
+                <option value="POST">POST</option>
+                <option value="PUT">PUT</option>
+                <option value="DELETE">DELETE</option>
+            </select>
+
+            <br>
+
+            <label for="endpoint">Endpoint:</label>
+            <input type="text" id="endpoint" name="endpoint" placeholder="Enter the API endpoint">
+
+            <br>
+
+            <label>Headers:</label>
+            <input type="text" id="headers" name="headers" placeholder="Enter headers (optional)">
+
+            <br>
+
+            <label>Data:</label>
+            <textarea id="data" name="data" rows="4" cols="50" placeholder="Enter data (optional)"></textarea>
+
+            <br>
+
+            <button type="submit">Make API Call</button>
+        </form>
+
+        <div>
+            <!--API RESPONSE HERE-->
+        </div>
+
+    </body>
+</html>
